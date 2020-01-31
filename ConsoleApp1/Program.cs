@@ -23,6 +23,7 @@ namespace ConsoleApp1
 
 			int lowerbound = 60, upperbond = 3000000;
 			int count = GetCount(A, B, lowerbound, upperbond);
+
 		}
 
 		static int GetCount(List<int> A, List<int> B, int LowerBound, int UpperBound)
@@ -56,6 +57,10 @@ namespace ConsoleApp1
 				rtn += (from num in B where num >= iLforB && num <= iUforB select num).Count();
 			}
 			return rtn;
+		}
+		static int GetCount2(List<int> A, List<int> B, int LowerBound, int UpperBound)
+		{
+			return 0;
 		}
 	}
 }
